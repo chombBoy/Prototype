@@ -1,0 +1,172 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+body{
+    height:100%;
+    max-width:100%;
+    margin: auto;
+    font-family: 'Gill Sans MT';
+    background-color:#F4F3EF;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.hero-nav ul li a:hover{
+    font-style: italic;
+}
+.container
+{
+    width:90%;
+    margin:auto;
+}
+header{
+    height: 100px;
+    align-items: center;
+    display: flex;
+ justify-content: space-between;
+ padding: 20px;
+
+border-bottom: 2px solid black;
+}
+
+.icons img{
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+.hero-nav{margin-top: 20px;}
+.hero-nav ul li{
+    margin-bottom: 10px;
+}
+.hero-nav ul li a{
+    font-family: 'Gill Sans MT';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-transform: uppercase;
+
+/* Blå */
+
+color: #180D2C;
+
+}
+.sub-container{
+    position: relative;
+    bottom: 100px;
+    width: 45%;
+    margin: auto;
+}
+.sub-container .image img{
+    width: 100%;
+    height: auto;
+}
+.content .first-para
+{
+    font-family: 'Gill Sans MT';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+.first-para>p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-family: 'Gill Sans MT';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+letter-spacing: 0.1em;
+
+/* Blå */
+
+color: #180D2C;
+margin-bottom: 15px;
+
+}
+
+.float{
+    float: right;
+}
+.other-heading div{
+    margin-bottom: 30px;
+}
+.other-heading p{
+    
+font-family: 'Gill Sans MT';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+.flex{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.flex p{
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:940px) {
+    .sub-container{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:630px) {
+    .image img{
+        border-radius: 50%;
+    }
+    ul li{
+        display: inline;
+        margin-left: 20px;
+    }.sub-container{
+        bottom: 0px;
+    }
+}
+@media screen and (max-width:624px) {
+    
+    .sub-container{
+        width: 80%;
+        margin: auto;
+    }
+    .content p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:460px) {
+    .hero-nav ul li a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:425px) {
+    .sub-container{
+        width: 100%;
+        margin: auto;
+    }
+    header{
+        display: block;
+    }
+    .icons{
+        text-align: right;
+    }
+}

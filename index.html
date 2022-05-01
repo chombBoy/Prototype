@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hjem</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- header start -->
+        <header>
+            <div></div>
+            <a href="index.html">
+                <div class="title">
+                    <img src="img/Vector.png" alt="">
+                    <img src="img/Vector (1).png" alt="">
+                    <img src="img/Vector (5).png" alt="">
+                    <img src="img/Vector (2).png" alt="">
+                    <img src="img/Vector (3).png" alt="">
+                    <img src="img/Vector (4).png" alt="">
+                    <img src="img/Vector (5).png" alt="">
+                </div>
+            </a>
+            <div class="icons">
+                <img src="icon/facebook.svg" alt="">
+                <img src="icon/instagram.svg" alt="">
+            </div>
+        </header>
+        <!-- header end -->
+
+
+
+<!-- hero-section start -->
+        <section class="hero-section">
+            <div class="hero-nav">
+                <ul>
+                    <li><a href="maten.html">MATEN</a></li>
+                    <li><a href="vienan.html">VINEN</a></li>
+                    <li><a href="">OM OSS</a></li>
+                    <li><a href="">KONTAKT</a></li>
+                </ul>
+            </div>
+            <div class="hero-img">
+                <img src="img/stock.png" alt="">
+            </div>
+            <div class="hero-text">
+                <div>
+                    <img src="img/h1.png" alt="" onmouseenter="this.src=`img/h1-hover.png`" onmouseleave="this.src=`img/h1.png`">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat arcu tortor, malesuada tristique nibh tristique non. Pellentesque et augue tempor. </p></div>
+                <button>BESTILL BORD</button>
+            </div>
+        </section>
+<!-- hero-section end -->
+
+
+<div class="section-title" style="margin-top: 40px;">
+    <img src="img/rettler-before.png" onmouseenter="this.src=`img/retter-after.png`" onmouseleave="this.src=`img/rettler-before.png`" style="cursor: pointer;" class="title-img" alt="">
+
+</div>
+<section class="second-section" >
+    <div class="parent-div">
+        <div>
+            <div><img src="img/1.png"  alt=""></div>
+            <img src="img/biff.jpg" class="simg" onmouseenter="this.src=`img/biff-hover.jpg`" onmouseleave="this.src=`img/biff.jpg`" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat arcu tortor, malesuada tristique nibh tristique non. Pellentesque et augue tempor. </p>
+        </div>
+        <div>
+            <div><img src="img/2.png"  alt=""></div>
+            <img src="img/put.png" class="simg" onmouseenter="this.src=`img/put-hover.png`" onmouseleave="this.src=`img/put.png`" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat arcu tortor, malesuada tristique nibh tristique non. Pellentesque et augue tempor. </p>
+        </div>
+        <div class="btnn">
+           <button onclick="location.href='maten.html';">SE MENYEN</button>
+        </div>
+    </div>
+
+</section>
+<!-- second section end -->
+
+
+<!-- instagram section start -->
+<img src="img/insta.png" onmouseenter="this.src=`img/insta-hover.png`" onmouseleave="this.src=`img/insta.png`" style="cursor: pointer;" alt="">
+<div class="insta-main-section">
+    <div class="insta-img-section">
+        <div><img src="img/angle-left.png" id="left-angle" alt="">
+
+        </div>
+        <div class="insta-images">
+            <img src="img/glass.png"  class="insta-img" alt="">
+            <img src="img/containers.png" class="insta-img" alt="">
+            <img src="img/glassInHands.png" class="insta-img" alt="">
+
+        </div>
+        <div><img src="img/angle-right.png" alt="" id="right-angle"></div>
+    </div>
+</div>
+
+<!-- instagram section end -->
+
+
+<!-- last section start -->
+
+<!-- last section end -->
+
+    </div>
+    <div class="last-section">
+        <div class="last-title">
+
+            <img src="img/apni.png" onmouseenter="this.src=`img/apni-hover.png`" onmouseleave="this.src=`img/apni.png`" alt="">
+        </div>
+        <div class="last-content">
+            <div class="left">
+                <h3>XDAG — XDAG</h3>
+                <p>19:00 - 01:00</p>
+            </div>
+            <div class="right">
+                <p>+47 550 00 420 </p>
+                <p>Nygårdsgaten 84A, 5008 Bergen </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const leftAngle=document.getElementById("left-angle");
+        const rightAngle=document.getElementById("right-angle");
+        const img=document.querySelectorAll(".insta-img");
+        // console.log(leftAngle);
+        // console.log(rightAngle);
+        // console.log(img);
+        // console.log(img[0]);
+        rightAngle.addEventListener("click",function(){
+            img[0].src="img/stock.png";
+            img[1].src="img/2.png";
+            img[2].src="img/1.png";
+        });
+        leftAngle.addEventListener("click",function(){
+            img[0].src="img/glass.png";
+            img[1].src="img/containers.png";
+            img[2].src="img/glassInHands.png";
+        })
+    </script>
+</body>
+
+</html>
