@@ -140,22 +140,29 @@
 
 
     <script>
-        const leftAngle=document.getElementById("left-angle");
-        const rightAngle=document.getElementById("right-angle");
-        const img=document.querySelectorAll(".insta-img");
-        // console.log(leftAngle);
-        // console.log(rightAngle);
-        // console.log(img);
-        // console.log(img[0]);
-        rightAngle.addEventListener("click",function(){
-            img[0].src="img/stock.png";
-            img[1].src="img/2.png";
-            img[2].src="img/1.png";
-        });
-        leftAngle.addEventListener("click",function(){
-            img[0].src="img/glass.png";
-            img[1].src="img/containers.png";
-            img[2].src="img/glassInHands.png";
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+// Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+}
+
+        function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("carousel-images");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
         })
     </script>
 </body>
