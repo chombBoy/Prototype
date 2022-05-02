@@ -222,30 +222,78 @@ color: #180D2C;
 }
 
 
-/* instagram section */
-.insta-main-section{
-    width: 100%;
-    padding: 20px;
-    border: 2px solid black;
+.end-container{
+  
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: repeat(7,1fr);
+  grid-template-areas: 
+  ". instagram instagram . . . ."
+  ". carousel carousel carousel carousel . ."
+  ". carousel carousel carousel carousel . ."
+  ". carousel carousel carousel carousel . ."
+  ". carousel carousel carousel carousel . ."
+  ". . . . . . ."
+  ". footer1 footer1 footer2 footer2 . .";
+  grid-gap: 0.5rem;
+  text-align: center;
+  align-items: end;
+  /*justify items:end; if you want the carousel stretched in the middle of the screen
+    justify items:start; if you want the carousel stretched in the start of the screen
+  */
 }
-.insta-img-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-.insta-images{
-    display: flex;
+
+.instagram{
+  padding: 15px 15px;
+  grid-area: instagram;
 }
 
 
-
-.insta-img{
-     width: 100%;
-    height:400px;
-    margin: 0px 5px; 
+.carousel {
+  border: medium dashed black;
+  border-style: solid;
+  padding: 20px 0;
+  max-width: 1000px;
+  position: relative;
+  grid-area: carousel;
 }
 
+
+.carousel-images {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 18px;
+  color: white;
+  background-color: rgba(96,96,96,.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+
+/* Position the "next button" to the left */
+.prev{
+  left: 0;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
 
 
